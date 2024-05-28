@@ -5,7 +5,7 @@ def leer_empleados(nombre_archivo):
     empleados = []
     try:
         response = requests.get('https://raw.githubusercontent.com/JesusKu126/Examen/main/EMPLEADOS.txt')
-        response.raise_for_status()  # Raise an exception if the request fails
+        response.raise_for_status() 
         data = response.text.splitlines()
         reader = csv.reader(data)
         for row in reader:
