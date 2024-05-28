@@ -27,7 +27,6 @@ def main():
     print("Ingrese los datos de los alumnos:")
     alumnos = ingresar_alumnos()
 
-    # Ordenar los alumnos por promedio, del mejor al peor
     alumnos.sort(key=lambda x: x.promedio, reverse=True)
 
     nombre_buscado = input("Ingrese el nombre del alumno a buscar: ")
